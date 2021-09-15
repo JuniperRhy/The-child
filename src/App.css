@@ -1,38 +1,173 @@
-.App {
-  text-align: center;
+.Grogu-Whole {
+  transform: scale(0.6);
+  margin-top: -20vh;
+  background-color: transparent;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Grogu-Head {
+  animation: head-bobble 30s ease-in-out infinite normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@keyframes head-bobble {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+
+  25% {
+    transform: translate(-91.5px, 250.05px) rotate(-17.48deg);
+  }
+  48% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+  68% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+
+  75% {
+    transform: translate(-91.5px, 250.05px) rotate(-17.48deg);
+  }
+  100% {
+    transform: translate(0px, 0px) rotate(0deg);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Eyes-Open {
+  animation: eye-blink 15s ease-in-out 3.35s infinite normal;
+  animation-direction: alternate;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes eye-blink {
+  0% {
+    opacity: 1;
   }
-  to {
-    transform: rotate(360deg);
+
+  4.5% {
+    opacity: 1;
+  }
+
+  5% {
+    opacity: 0;
+  }
+  5.5% {
+    opacity: 1;
+  }
+
+  8.5% {
+    opacity: 1;
+  }
+  9% {
+    opacity: 0;
+  }
+  9.5% {
+    opacity: 1;
+  }
+
+  24.5% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 0;
+  }
+  25.5% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+
+  34.5% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 0;
+  }
+  35.5% {
+    opacity: 1;
+  }
+  37% {
+    opacity: 1;
+  }
+
+  37.5% {
+    opacity: 0;
+  }
+  55% {
+    opacity: 0;
+  }
+  55.5% {
+    opacity: 1;
+  }
+
+  57.5% {
+    opacity: 1;
+  }
+  58% {
+    opacity: 0;
+  }
+  58.5% {
+    opacity: 1;
+  }
+
+  64.5% {
+    opacity: 1;
+  }
+  65% {
+    opacity: 0;
+  }
+  65.5% {
+    opacity: 1;
+  }
+
+  69% {
+    opacity: 1;
+  }
+  74% {
+    opacity: 1;
+  }
+
+  85.5% {
+    opacity: 1;
+  }
+  86% {
+    opacity: 0;
+  }
+  86.5% {
+    opacity: 1;
+  }
+  89.5% {
+    opacity: 1;
+  }
+
+  94.5% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 0;
+  }
+  95.5% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.Ball {
+  animation: use-the-force 15s ease-in-out 3.35s infinite normal;
+  animation-direction: alternate;
+}
+@keyframes use-the-force {
+  0% {
+    transform: translate(0vw, 0vh);
+  }
+  40% {
+    transform: translate(0vw, 0vh);
+  }
+  50% {
+    transform: translate(-30em, -22em);
+  }
+  100% {
+    transform: translate(-30em, -22em);
   }
 }
